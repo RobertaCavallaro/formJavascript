@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a better form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>Building better forms</h1>
+
+    <form action="" method="post" id="contact">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <p>Please reach out to us if you have any questions about our products</p>
+
+            <label for="fullName">Your Name:</label>
+            <input type="text" id="fullName" name="full_name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="msg">Your Message:</label>
+            <textarea name="message" id="msg"></textarea>
+
+            <div class="checks">
+                <input type="checkbox" id="copyEmail" name="copyEmail">
+                <label for="copyEmail">Send a copy to my email</label>
+            </div>
+
+            <div class="radioBtns">
+                <p>Preferred method of contact:</p>
+                <label for="contactEmail">
+                    <input type="radio" id="contactEmail" value="email" name="contactPrefence"> Email
+                </label>
+
+                <label for="contactPhone">
+                    <input type="radio" id="contactPhone" value="phone" name="contactPrefence"> Phone call
+                </label>
+
+                <label for="contactText">
+                    <input type="radio" id="contactText" value="text" name="contactPrefence"> Text message
+                </label>
+
+                <label for="contactMail">
+                    <input type="radio" id="contactMail" value="mail" name="contactPrefence"> Snail mail
+                </label>
+
+            </div>
+
+
+
+            <input type="submit" id="submit" value="Contact Us">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

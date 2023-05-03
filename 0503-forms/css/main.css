@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comme', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+#contact fieldset {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid 1px #fff;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,.6);
+    max-width: 550px;
+}
+
+#contact legend {
+    font-size: 1.5em;
+    padding: 0 .25em;
+    color: #999;
+    position: relative;
+    top: -11px;
+    left: -4px;
+}
+
+#contact label {
+    display: block;
+    margin-top: 1em;
+}
+
+#contact .checks label, #contact .radioBtns label {
+    margin-top: 0;
+}
+
+#contact input, #contact textarea {
+    padding: .5em;
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+
+#contact textarea  {
+    min-height: 8em;
+    min-width: 100%;
+}
+
+#contact input[type="email"], #contact input[type="text"] {
+    width: 15em;
+}
+
+#contact .radioBtns p {
+    margin-top: 1em;
+}
+
+#contact input[type="checkbox"] + label {
+    display: inline-block;
+    margin-top: 0;
+}
+
+#contact input[type="submit"] {
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #3ca3ac;
+    color: #fff;
+    border: none;
+    font-size: .9em;
+    margin-top: 1em;
+}
+
+input:focus, textarea:focus {
+    outline: solid 1px #3ca3ac;
+    border: solid 1px #3ca3ac;
+    box-shadow: 0 0 3px #3ca3ac;
+}
